@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+:root {
+  --bg-color: #050505;
+  --text-color: #e0e0e0;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: hidden; /* Avoid scrollbars for full-screen canvas */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
